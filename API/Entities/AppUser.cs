@@ -1,4 +1,5 @@
-﻿namespace API.Entities;
+﻿
+namespace API.Entities;
 
 public class AppUser
 {
@@ -6,5 +7,6 @@ public class AppUser
 
     //public string? UserName {get; set;}  // defining an optional property with the ? sign
     public string UserName { get; set; }
-    
+    public byte[] PasswordHash{ get; set;}
+    public byte[] PasswordSalt{ get; set;}
 }
